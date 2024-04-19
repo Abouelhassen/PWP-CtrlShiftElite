@@ -1,15 +1,15 @@
-import { Document } from 'mongoose';
+// user.interface.ts
+import { UserStatus } from '../user/schemas/user.schema';
+import { Types } from 'mongoose';
 
-export interface User extends Document {
+export interface IUser extends Document {
+  _id?: Types.ObjectId;
   username: string;
-  password: string; // Store hashed passwords only
+  password: string;
   email: string;
-  profile: UserProfile;
-  friends: User[];
-}
-
-export interface UserProfile {
-  firstName: string;
-  lastName: string;
-  avatar: string; // URL to the avatar image
+  firstName?: string;
+  lastName?: string;
+  avatar?: string;
+  status?: UserStatus;
+  friends?: Array<Types.ObjectId>;
 }
