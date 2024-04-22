@@ -1,18 +1,3 @@
-# PWP SPRING 2024
-
-# PROJECT NAME
-Chat application
-
-# Group information
-
-- Student 1. Hung Trinh (htrinh23@student.oulu.fi)
-- Student 2. Mazen Hassaan (Mazen.Hassaan@student.oulu.fi)
-- Student 3. Toseef Ahmed
-  (Toseef.Ahmed@student.oulu.fi)
-- Student 4. Saim Akhtar (saim.-@student.oulu.fi)
-
-**Remember to include all required documentation and HOWTOs, including how to create and populate the database, how to run and test the API, the url to the entrypoint and instructions on how to setup and run the client**
-
 # Chat Application
 
 ## Description
@@ -23,22 +8,24 @@ In backend site, we use Mongoose, which is a Node.js-based Object Data Modeling 
 
 ## Code Repository
 
-Clone the code from [This Repository](https://github.com/Abouelhassen/PWP-CtrlShiftElite) using the commmand
+Clone the code from [This Repository](https://github.com/toseef-ahmd/chat-app-backend) using the commmand
 
 ```bash
-git clone https://github.com/Abouelhassen/PWP-CtrlShiftElite
+$ git clone https://github.com/toseef-ahmd/chat-app-backend
 ```
+
 ## Installation
-After you have cloned the repository, Navigate to PWP-CtrlShiftElite using
+
+After you have cloned the repository, Navigate to chat-app-backend using
 
 ```bash
-cd PWP-CtrlShiftElite
+$ cd chat-app-backend
 ```
 
 Run
 
 ```bash
-npm install
+$ npm install
 ```
 
 This will install the dependencies as defined in **_Package.json_** file.
@@ -49,8 +36,7 @@ As of now, we have only created the Database schema, so you do not need to run t
 
 In order to create the database and dump data into collections, you need following tools.
 
-
-1.  MongoDB Client. (Installed when you run ```npm install```)
+1.  MongoDB Client. (Installed when you run `npm install`)
 2.  Docker. [(Here)](https://www.docker.com/products/docker-desktop/#)
 3.  Docker Compose file. (Provided in the code repository.)
 4.  **dbdump.js** file. (Provided in the root directory of the code repository.)
@@ -81,7 +67,7 @@ Open MongoDB Compass or Studio 3T (Whichever you have downloaded), and create a 
 Here is the connection string that you may use in the connection manager.
 
 ```bash
-mongodb://rootuser:rootpass@localhost:27017/admin
+$  mongodb://rootuser@localhost:27017/admin
 ```
 
 Once you are logged in, you would be able to view the collections and data inside them.
@@ -89,4 +75,6 @@ Once you are logged in, you would be able to view the collections and data insid
 Here is the ER diagrams of the database:
 ![alt text](images/ERD.png)
 
+## License
 
+Nest is [MIT licensed](LICENSE).
